@@ -28,7 +28,7 @@ const axiosInstance = axios_1.default.create({
 // Schedule the self-ping every 10 minutes (you can adjust the frequency)
 node_cron_1.default.schedule('*/10 * * * *', () => {
     axiosInstance
-        .get(`https://traveleaf-server.onrender.com`)
+        .get(`https://traveleaf-server-c112.onrender.com/`)
         .then((response) => {
         console.log('😀🎉 Self-ping successful:', response.status);
     })
